@@ -32,9 +32,10 @@ const WeatherComponent: React.FC = () => {
       <table className="fixed">
                     <thead>
                     <tr>
-                        <td>Сообщение</td>
-                        <td>Дата и время (БД Сервер)</td>
-                        <td>Дата и время (ПЛК)</td>
+                        <td>Date</td>
+                        <td>Summary</td>
+                        <td>Temperature C</td>
+                        <td>Temperature K</td>
                     </tr>
                     </thead>
                     <tbody>
