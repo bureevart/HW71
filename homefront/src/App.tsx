@@ -1,3 +1,4 @@
+import axios from 'axios';
 import './App.css';
 import React, { useEffect, useState } from 'react';
 
@@ -9,7 +10,14 @@ import React, { useEffect, useState } from 'react';
 // }
 
 const WeatherComponent: React.FC = () => {
-
+  useEffect(() => {
+    axios<string>(`/weatherforecast`)
+    .then(res =>{
+      console.log(res.data)
+    })
+    .catch(error => console.log(error))
+  }, [])
+  
   return (
     <div>
       <h1>Client working!</h1>
